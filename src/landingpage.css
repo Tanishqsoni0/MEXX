@@ -1,0 +1,114 @@
+.meal-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background: url('/path-to-blurred-bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.main-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+/* Left half inside main-panel */
+.meal-content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Right content like cards and calendar */
+.right-content {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+/* Positioning meal diagram elements in a flow */
+.meal-diagram {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  background-color: #fdd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.cancel {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f44;
+  color: white;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.advance {
+  align-self: center;
+  background-color: #f44;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #e86b6b;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar {
+  text-align: center;
+}
+
+.week {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.highlight-box {
+  background-color: #ffecec;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 16px;
+  text-align: center;
+}

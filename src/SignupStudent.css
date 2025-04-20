@@ -6,6 +6,10 @@
 }
 
 body, html {
+  background-image: url('./assets/kawai.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 100%;
   width: 100%;
   background-color: #ffece8;

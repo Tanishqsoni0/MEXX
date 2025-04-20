@@ -2,6 +2,7 @@ import React from "react";
 import Food from "./assets/Food.png";
 import "./Login.css";
 import { Link } from 'react-router-dom';
+import Background from"./assets/kawai.png"
 
 export const Login = () => {
 
@@ -28,10 +29,10 @@ export const Login = () => {
                 <div className="text-wrapper-3">Forgot your password?</div>
 
                 <label className="checkbox"><input type="checkbox" className="tickbox" name="example" value="1"/>Remember Me</label>
+                <Link className="" to="/LandingPage">
+                  <button className="div">Login</button>
+                </Link>
                 
-                <button className="div">
-                  <div className="text-wrapper-2">Login</div>
-                </button>
               </div>
             </div>
           </div>

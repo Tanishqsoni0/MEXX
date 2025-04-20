@@ -1,5 +1,8 @@
 .desktop {
-  background-color: rgba(255, 236, 232, 1);
+  background-image: url('./assets/kawai.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -81,6 +84,10 @@
 
 .desktop .div {
   background-color: #e6423f;
+  color: #ffece8;
+  font-family: "Alegreya-Medium", Helvetica;
+  font-size: 20px;
+  font-weight: 500;
   border-radius: 3px;
   height: 40px;
   position: absolute;
@@ -91,6 +98,10 @@
   align-items: center;
   border: none;
   cursor: pointer;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center;
+  left: 63px;
 }
 
 .desktop .don-t-have-an {
