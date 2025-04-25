@@ -4,24 +4,33 @@ import "./SignupStudent.css";
 import { Link } from 'react-router-dom';
 
 export const SignupStudent = () => {
+
+  let x=0
+
   const handlestudent = () =>{
-    document.getElementById("student").style.backgroundColor="#e6423f"
-    document.getElementById("student").style.color="#ffece8"
-    document.getElementById("staff").style.backgroundColor="#ffece8"
-    document.getElementById("staff").style.color="#e6423f"
-    const input = document.createElement("input");
-    input.id = "rollno";
-    input.type = "text";
-    input.placeholder = "Roll No";
+    if(x==1){
+      document.getElementById("student").style.backgroundColor="#C3D09A"
+      document.getElementById("student").style.color="#4F622E"
+      document.getElementById("staff").style.backgroundColor="#EFEDE4"
+      document.getElementById("staff").style.color="#4F622E"
+      const input = document.createElement("input");
+      input.id = "rollno";
+      input.type = "text";
+      input.placeholder = "Roll No";
+      input.className = "name";
+      document.getElementById("form1").appendChild(input);
+      x--
+    }
     
-    document.getElementById("form1").appendChild(input);
   }
   const handlestaff = () =>{
-    document.getElementById("staff").style.backgroundColor="#e6423f"
-    document.getElementById("staff").style.color="#ffece8"
-    document.getElementById("student").style.backgroundColor="#ffece8"
-    document.getElementById("student").style.color="#e6423f"
+    document.getElementById("staff").style.backgroundColor="#C3D09A"
+    document.getElementById("staff").style.color="#4F622E"
+    document.getElementById("student").style.backgroundColor="#EFEDE4"
+    document.getElementById("student").style.color="#4F622E"
     document.getElementById("rollno").remove()
+    x++
+    console.log(x)
   }
   return (
     <div className="container">
@@ -40,12 +49,12 @@ export const SignupStudent = () => {
 
         <form>
           <div id="form1" className="form-row">
-            <input type="text" placeholder="Name" required />
-            <input id="rollno" type="text" placeholder="Roll No." required />
+            <input className="name" type="text" placeholder="Name" required />
+            <input className="name" id="rollno" type="text" placeholder="Roll No." required />
           </div>
           <div className="form-row">
-            <input type="text" placeholder="Contact No." required />
-            <input type="text" placeholder="Hostel" required />
+            <input className="name" type="text" placeholder="Contact No." required />
+            <input className="name" type="text" placeholder="Hostel" required />
           </div>
           <input className="email" type="email" placeholder="Email" required />
           <input className="password" type="password" placeholder="Password" required />
